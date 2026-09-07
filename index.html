@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <title>Olaomoju Shittu - Portfolio</title>
 </head>
 <body>
@@ -49,8 +50,7 @@
 
         <div class="about-text">
             <p>
-                I'm a passionate full stack developer with over 5 years of
-                experience building modern web applications. I specialize in
+                I'm a passionate Web developer with experience building modern web applications. I specialize in
                 React, Node.js, and cloud technologies. My goal is to create
                 innovative solutions that solve real-world problems while
                 delivering exceptional user experiences. I'm constantly learning and staying up-to-date with the latest technologies and best practices in software development.
@@ -261,9 +261,9 @@
 
                     <div class="project-links">
 
-                        <a href="https://github.com/olaomoju7/Portfolio"><i class="fab fa-github"></i> Code</a>
+                        <a href="https://github.com/olaomoju7/Portfolio" target="_blank"><i class="fab fa-github"></i> Code</a>
 
-                        <a href="https://vercel.com/olaomoju1" target="_blank"><i class="fas fa-arrow-up-right-from-square"></i> Demo</a>
+                        <a href="https://olaomojushittu.vercel.app/" target="_blank"><i class="fas fa-arrow-up-right-from-square"></i> Demo</a>
 
                     </div>
 
@@ -336,12 +336,11 @@
                 </div>
 
                 <div class="project-content">
-                    <h3>Analytics Dashboard</h3>
-                    <p> Interactive business dashboard with reports, charts, KPIs, data filtering, user management and export features. </p>
+                    <h3>Backend Api</h3>
+                    <p> RESTful API for managing contact form submissions with CRUD operations and validation. </p>
 
                     <div class="project-tech">
-                        <span>Vue</span>
-                        <span>Chart.js</span>
+                        <span>node.js</span>
                         <span>Express</span>
                     </div>
 
@@ -360,13 +359,13 @@
                 </div>
 
                 <div class="project-content">
-                    <h3>Social Media Platform</h3>
-                    <p>Complete social networking platform with messaging, posts, likes, comments, notifications and user profiles.</p>
+                    <h3>Codebridge Clone</h3>
+                    <p>Complete replica of the Codebridge platform with similar features and functionality.</p>
 
                     <div class="project-tech">
                         <span>React</span>
-                        <span>GraphQL</span>
-                        <span>PostgreSQL</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
                     </div>
 
                     <div class="project-links">
@@ -483,23 +482,23 @@
 
             <div class="contact-form">
 
-                <form>
+                <form id="contactForm" method="POST">
 
-                    <input
+                    <input id="name"
                         type="text"
                         placeholder="Your Name"
                         required>
 
-                    <input
+                    <input id="email"
                         type="email"
                         placeholder="Your Email"
                         required>
 
-                    <input
+                    <input id="subject"
                         type="text"
                         placeholder="Subject">
 
-                    <textarea
+                    <textarea id="message"
                         rows="6"
                         placeholder="Your Message"></textarea>
 
@@ -512,6 +511,7 @@
                     </button>
 
                 </form>
+                <p id="response" class="form-message"></p>
 
             </div>
 
@@ -639,6 +639,7 @@
     </div>
 
 </footer>
+<script src="script.js"></script>
 
 </body>
 </html>
